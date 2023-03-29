@@ -1,0 +1,11 @@
+@import '/home/bruno/repositorios/curso-angular/pokedex/src/assets/config-scss/rem-calc.scss';
+
+:host{
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: rem-calc(40) 0;
+    }
+}
