@@ -11,6 +11,7 @@ const routes: Routes = [
   {path: "sobre", component: SobreComponent, children:[
     {path: "bruno", component: SobreComponent}
   ]},
+  {path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardModule)},
   {path: "404", component: PageErrorComponent},
   {path: "**", redirectTo: '404'}
 ];
