@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { finalize } from 'rxjs';
 
 import { BankingComponent } from './banking.component';
 
@@ -34,6 +35,15 @@ describe('BankingComponent', () => {
     expect(component.getPoupanca).toEqual(0);
     expect(component.getCarteira).toEqual(60);
   });
+
+  it (`(I) setSacar(): shoud transfer poupanca from carteira`, () => {
+    let el = fixture.debugElement.nativeElement;
+    
+    el.querySelector('#input-sacar').value = "10"
+    el.querySelector('#sacar').click();
+    fixture.detectChanges();
+    expect(el.querySelector('get-carteira').textContent).toEqual('60');
+  });
   
   it (`(U) getSacar(): shoud transfer poupanca dont have string (isNaN) or poupanca < value`, () => {
     expect(component.setSacar('string')).not.toBeTruthy();
@@ -54,5 +64,14 @@ describe('BankingComponent', () => {
     expect(component.getPoupanca).toEqual(10);
     expect(component.getCarteira).toEqual(50);
   });
-  
+
+  it (`(I) setDepositar(): shoud transfer carteira from poupanca`, () => {
+    let el = fixture.debugElement.nativeElement;
+    
+    el.querySelector('#input-depositar').value = "10"
+    el.querySelector('#depositar').click();
+    fixture.detectChanges();
+    expect(el.querySelector('get-poupanca').textContent).toEqual('20');
+  });
+
 });
