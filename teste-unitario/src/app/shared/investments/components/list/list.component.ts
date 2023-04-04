@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 //Model
-import { Investiments } from '../model/investments';
+import { Investments } from '../../model/investments';
 
 @Component({
   selector: 'app-list',
@@ -10,7 +10,7 @@ import { Investiments } from '../model/investments';
 })
 export class ListComponent implements OnInit{
 
-  public investiments: Array<Investiments> =[
+  public investments: Array<Investments> =[
     {
       name: "Itaú",
       value: 100
