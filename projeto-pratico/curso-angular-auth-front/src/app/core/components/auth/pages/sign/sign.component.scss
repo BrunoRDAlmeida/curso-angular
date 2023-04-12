@@ -13,21 +13,22 @@
             width: 100%;
         }
 
-        label{
+        label {
             display: flex;
             justify-content: center;
             align-items: center;
             border-bottom: 1px solid $preto;
 
-            svg{
+            svg {
                 width: 30px;
             }
 
-            input{
+            input {
                 height: 50px;
                 border: none;
                 font-size: 18px;
-                &::placeholder{
+
+                &::placeholder {
                     color: $preto;
                 }
             }

@@ -1,4 +1,4 @@
-.btn-vermeho{
+.btn-vermelho {
     width: 100%;
     height: 60px;
     margin: 25px 0 0;
@@ -9,7 +9,7 @@
     font-size: 18px;
     cursor: pointer;
 
-    &:disabled{
+    &:disabled {
         cursor: no-drop;
         background: darken($vermelho, 20%);
     }
