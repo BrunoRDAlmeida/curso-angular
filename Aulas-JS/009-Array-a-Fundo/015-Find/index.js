@@ -25,8 +25,8 @@ const pedidos = [
     Nome bem subjetivo também, mas ele procura e te retorna 1 o primeiro valor encontrado da array
 */
 
-const findId = pedidos.find((Element) => {
-    return Element.id === 29;
+const findId = pedidos.find((element) => {
+    return element.id === 29;
 });
 
 console.log(findId);

@@ -25,8 +25,8 @@ const pedidos = [
     Como o nome já diz, esse metodo deve ser utilizado quando temos a necessidade de filtrar nossa lista
 */
 
-const filterRefri = pedidos.filter((Element, index) => {
-    return Element.bebida === "Refrigerante";
+const filterRefri = pedidos.filter((element, index) => {
+    return element.bebida === "Refrigerante";
 });
 
 console.log(pedidos);
