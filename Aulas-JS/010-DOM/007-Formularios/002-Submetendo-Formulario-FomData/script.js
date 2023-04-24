@@ -20,8 +20,8 @@ form.addEventListener("submit", (event) => {
     FormData.delete("name")
     console.log(FormData.has("name"))
 
-    if (name && password) {
-        console.log(name, password)
-        form.submit()
-    }
+    // if (name && password) {
+    //     console.log(name, password)
+    //     form.submit()
+    // }
 })
