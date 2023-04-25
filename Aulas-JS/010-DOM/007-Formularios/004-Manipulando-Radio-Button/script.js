@@ -18,14 +18,14 @@ form.addEventListener("submit", (event) => {
     //         console.log(res)
     //     }
     // })
+})
 
-    form.radio.forEach((res) => {
-        res.addEventListener("change", (event) => {
-            const { target } = event
+form.radio.forEach((res) => {
+    res.addEventListener("change", (event) => {
+        const { target } = event
 
-            if (target.checked) {
-                change.innerHTML = target.value
-            }
-        })
+        if (target.checked) {
+            change.innerHTML = target.value
+        }
     })
 })
