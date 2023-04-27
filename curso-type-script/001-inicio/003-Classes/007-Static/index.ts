@@ -11,11 +11,11 @@ class Utils {
     }
 }
 
-class Pessoa{
-    public variasPessoas(){
-        Utils.cloneObject([])
-    }
-}
+// class Pessoa{
+//     public variasPessoas(){
+//         Utils.cloneObject([])
+//     }
+// }
 
 const tenis1: { tamanho: number; estoque: boolean} ={
     tamanho: 41,
