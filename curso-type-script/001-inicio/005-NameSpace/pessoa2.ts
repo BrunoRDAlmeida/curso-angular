@@ -4,12 +4,12 @@
     Isso torna os namespaces uma construção muito simples de usar.
  */
 
-import { Pessoa1 } from "./pessoa1"
+import { Pessoa1, Pessoa } from "./module"
+
+
 
 console.log(Pessoa1.nome)
 console.log(Pessoa1.calc())
-
-import { Pessoa } from "./namespace-aninhados"
 
 console.log(Pessoa.Bruno.nome)
 console.log(Pessoa.Vitor.nome)
