@@ -7,5 +7,5 @@ class Pessoa {
 let pessoa = new Pessoa()
 
 console.log(pessoa.nome)
-// pessoa.nome = "Vitor" 
+// pessoa.nome = "Vitor"
 console.log(pessoa.nome)
